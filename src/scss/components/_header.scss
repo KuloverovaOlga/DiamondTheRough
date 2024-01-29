@@ -1,3 +1,96 @@
 .header {
-  background-color: rgb(134, 44, 44);
+  // .header__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.7rem 0;
+  }
+
+  // .header__logo-wrapper
+
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .header__logo-box
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  // .header__logo-text
+
+  &__logo-text {
+  }
+  &__logo-bottom-text {
+    font-size: 1.4rem;
+    margin-top: -0.6rem;
+  }
+
+  // .header__logo-svg-box
+
+  &__logo-svg-box {
+    width: 3.7rem;
+    height: 4.1rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .header__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 6.2rem;
+
+  }
+
+  // .header__nav-item
+
+  &__nav-item {
+  }
+
+  // .header__nav-item-link
+
+  &__nav-item-link {
+  }
+
+  // .header__nav-item-link-wrapper
+
+  &__nav-item-link-wrapper {
+  }
+
+  // .header__contact-box
+
+  &__contact-box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+  }
+
+  // .header__contact-box-text
+
+  &__contact-box-text {
+  }
+
+  // .header__contact-box-svg-box
+
+  &__contact-box-svg-box {
+    width: 2.4rem;
+    height: 2.4rem;
+    & svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
+

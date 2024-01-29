@@ -1,60 +1,44 @@
-//	reset / base styles
+@import './mixins';
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-family: helvetica, sans-serif;
-  color: white;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 1.3em;
-  list-style-type: none;
-}
 
-html,
+// colors
+$white: #ffffff;
+$black: #000000;
+$body-color: #E5E5E5;
+$grey: #787878;
+$grey-text: #24231F;
+
+// body
 body {
-  // background: #060606;
-  scroll-behavior: smooth;
+  &.lock {
+      overflow: hidden;
+      touch-action: none;
+  }
 }
 
-//gsap
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.panels {
-  height: 300vh;
+.wrapper {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
-.panel {
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
-  &:nth-child(1) {
-    background-color: #3498db;
-  }
-  &:nth-child(2) {
-    background-color: #757575;
-  }
-  &:nth-child(3) {
-    background-color: #a728a7;
-  }
+// main
+main {
+  flex-grow: 1;
 }
-img,
-video {
-  width: 100rem;
-  height: 100rem;
-}
-.exampel {
-  width: 30rem;
-  height: 30rem;
-  background: url("./assets/images/example.webp");
-}
-.header {
-  width: 40rem;
-}
+
+@import './ui/ui';
+@import './components/_header';
+// section {
+//   padding: 15rem 0;
+//   @media (max-width: 48em) {
+//       padding: 18rem 0;
+//   }
+//   &._first {
+//       padding: 0 0 15rem;
+//       @media (max-width: 48em) {
+//           padding: 0 0 18rem;
+//       }
+//   }
+// }
