@@ -20,7 +20,7 @@
 
     @include small-tablet {
       grid-template-columns: repeat(2, 1fr);
-      gap: 8rem 6rem;
+      gap: 8rem 4rem;
     }
   }
 
@@ -46,7 +46,7 @@
             @include small-tablet {
               position: absolute;
               bottom: 0;
-              left: -102%;
+              left: -93%;
             }
           }
         }
@@ -105,6 +105,9 @@
     align-items: center;
     gap: 1rem;
     justify-content: center;
+    @include small-tablet {
+      justify-content: flex-start;
+    }
   }
 
   // .footer__logo-text
