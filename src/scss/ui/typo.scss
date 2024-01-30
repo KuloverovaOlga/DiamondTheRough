@@ -1,5 +1,5 @@
 .tl1 {
-    font-family: 'Inter';
+    font-family: 'Jura';
     font-size: 5rem;
     font-style: normal;
     font-weight: 400;
@@ -13,23 +13,19 @@
 // --------------------------------------------------------------------------
 
 .txt18 {
-
-    font-family: 'Inter';
+    font-family: 'Jura';
     font-size: 1.8rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
-    & .eng {
-        font-family: 'Exan';
-    }
     &_lh {
-        font-family: 'Inter';
+        font-family: 'Jura';
         font-size: 1.8rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 3rem;
         &.eng {
-            font-family: 'Exan';
+            font-family: 'Jura';
         }
         &--grey {
             color: $grey;
@@ -38,14 +34,11 @@
 
     &_nav {
         color: $grey-text;
-        font-family: 'Inter';
+        font-family: 'Jura';
         font-size: 1.8rem;
         font-style: normal;
-        font-weight: 400;
+        font-weight: 600;
         line-height: 3rem;
-        &.eng {
-            font-family: 'EuclidCircularA';;
-        }
         & .logo-text {
             font-family: 'Europeextendedc';;
         }
