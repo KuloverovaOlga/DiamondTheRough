@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Euclid Circular A"; // шрифт по умолчанию по сайту
+  font-family: 'Euclid Circular A'; // шрифт по умолчанию по сайту
   font-size: 0.5208335vw; // на разрешении 1920 0.520835vw === 10px
   font-style: normal;
   font-weight: normal;
@@ -103,13 +103,13 @@ ul li {
   margin: 0 auto;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 

@@ -10,8 +10,8 @@
     flex-direction: column;
     gap: 12.6rem;
     @include small-tablet {
-        gap: 9.6rem;
-      }
+      gap: 9.6rem;
+    }
   }
 
   // .success__count-wrapper
@@ -24,9 +24,9 @@
     width: 66rem;
     margin: 0 auto;
     @include small-tablet {
-        gap: 6.6rem;
-        width: 100%;
-      }
+      gap: 6.6rem;
+      width: 100%;
+    }
   }
 
   // .success__count-box
@@ -37,8 +37,8 @@
     gap: 5.3rem;
     align-items: center;
     @include small-tablet {
-        gap: 5.4rem;
-      }
+      gap: 5.4rem;
+    }
   }
 
   // .success__count-num
@@ -48,32 +48,30 @@
     height: 25.1rem;
     position: relative;
     &::after {
-        position: absolute;
-        content: "";
-        background: url(./assets/images/diamond.webp) no-repeat top/cover;
-        mix-blend-mode: hard-light;
-        width: 53.7rem;
-        height: 53.8rem;
-        left: 50%;
-        top: 45%;
-        transform: translate(-50%, -50%);
-
+      position: absolute;
+      content: '';
+      background: url(./assets/images/diamond.webp) no-repeat top/cover;
+      mix-blend-mode: hard-light;
+      width: 53.7rem;
+      height: 53.8rem;
+      left: 50%;
+      top: 45%;
+      transform: translate(-50%, -50%);
     }
     & svg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     @include small-tablet {
-        width: 65.2rem;
-        height: 27.4rem;
-        &::after {
-            width: 58.6rem;
-            height: 58.8rem;
-    
-        }
+      width: 65.2rem;
+      height: 27.4rem;
+      &::after {
+        width: 58.6rem;
+        height: 58.8rem;
       }
+    }
   }
 
   // .success__count-text
