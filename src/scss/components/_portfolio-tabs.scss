@@ -7,8 +7,8 @@
     flex-direction: column;
     gap: 15.5rem;
     @include small-tablet {
-        gap: 9.6rem;
-      }
+      gap: 9.6rem;
+    }
   }
 
   // .portfolio-tabs__tabs-list
@@ -31,7 +31,7 @@
     cursor: pointer;
     &::after {
       position: relative;
-      content: "";
+      content: '';
       display: block;
       bottom: 0;
       width: 0;

@@ -9,7 +9,7 @@ export let bodyUnlock = (delay = 500) => {
       //   const el = lock_padding[index];
       //   el.style.paddingRight = '0px';
       // }
-      document.querySelector('.widget').style.right = '3.7rem'
+      document.querySelector('.widget').style.right = '3.7rem';
       body.style.paddingRight = '0px';
       document.documentElement.classList.remove('lock');
     }, delay);
@@ -23,18 +23,18 @@ export let bodyLock = (delay = 500) => {
   let body = document.querySelector('body');
   if (bodyLockStatus) {
     let lock_padding = document.querySelectorAll('[data-lp]');
-  //   for (let index = 0; index < lock_padding.length; index++) {
-  //     const el = lock_padding[index];
-  //     el.style.paddingRight =
-  //       window.innerWidth -
-  //       document.querySelector('.wrapper').offsetWidth +
-  //       'px';
-  //   }
+    //   for (let index = 0; index < lock_padding.length; index++) {
+    //     const el = lock_padding[index];
+    //     el.style.paddingRight =
+    //       window.innerWidth -
+    //       document.querySelector('.wrapper').offsetWidth +
+    //       'px';
+    //   }
 
-  const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;
-  let scrollWith = getScrollbarWidth();
-    body.style.paddingRight =`${scrollWith}px`
-    document.querySelector('.widget').style.right =`${(scrollWith + 37) / 10}rem`
+    const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;
+    let scrollWith = getScrollbarWidth();
+    body.style.paddingRight = `${scrollWith}px`;
+    document.querySelector('.widget').style.right = `${(scrollWith + 37) / 10}rem`;
     document.documentElement.classList.add('lock');
     bodyLockStatus = false;
     setTimeout(function () {
@@ -72,8 +72,8 @@ export const _slideUp = (target, duration = 500, showmore = 0) => {
       document.dispatchEvent(
         new CustomEvent('slideUpDone', {
           detail: {
-            target: target,
-          },
+            target: target
+          }
         })
       );
     }, duration);
@@ -109,8 +109,8 @@ export const _slideDown = (target, duration = 500, showmore = 0) => {
       document.dispatchEvent(
         new CustomEvent('slideDownDone', {
           detail: {
-            target: target,
-          },
+            target: target
+          }
         })
       );
     }, duration);
