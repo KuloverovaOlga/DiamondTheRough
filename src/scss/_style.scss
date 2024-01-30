@@ -10,6 +10,7 @@ $grey-text: #24231F;
 
 // body
 body {
+  background-color: $body-color;
   &.lock {
       overflow: hidden;
       touch-action: none;
@@ -30,6 +31,7 @@ main {
 
 @import './ui/ui';
 @import './components/_header';
+@import './components/_footer';
 // section {
 //   padding: 15rem 0;
 //   @media (max-width: 48em) {
