@@ -1,5 +1,6 @@
 .services-list {
     margin-bottom: 31.4rem;
+    font-family: 'Jura';
 
     &__container {
         max-width: 127.3rem;
@@ -33,7 +34,7 @@
         }
 
         &__show-more {
-            display: block;
+            display: flex;
             margin: 0 auto;
         }
     }
