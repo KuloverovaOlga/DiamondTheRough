@@ -144,9 +144,9 @@
 		right: -10rem;
 		transition: background-color 0.3s;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
 		@include small-tablet {
 			display: none;
