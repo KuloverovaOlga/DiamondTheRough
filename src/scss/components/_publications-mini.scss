@@ -1,0 +1,16 @@
+.publications-mini {
+  @include small-tablet {
+    font-size: 3.2rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+}
