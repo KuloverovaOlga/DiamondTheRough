@@ -1,6 +1,9 @@
 .portfolio-tabs {
-  padding: 16rem 0 14.5rem;
+  padding: 12.7rem 0 14.5rem;
   // .portfolio-tabs__inner
+  @include small-tablet {
+    padding: 12rem 0 12rem;
+  }
 
   &__inner {
     display: flex;
@@ -48,5 +51,9 @@
   // .portfolio-tabs__list
 
   &__list {
+  }
+  &__btn {
+    width: fit-content;
+    align-self: center;
   }
 }
