@@ -12,8 +12,20 @@
     padding-bottom: 2.2rem;
     border-bottom: 2px solid $grey;
 
+    position: relative;
+
+    @include small-tablet {
+      font-size: 1.8rem * 2;
+      padding-bottom: 6.4rem * 2;
+    }
+
     &-date {
       margin-right: 40.4rem;
+      @include small-tablet {
+        position: absolute;
+        left: 0;
+        bottom: 4rem;
+      }
     }
 
     &-img {
@@ -21,6 +33,12 @@
       height: 13.3rem;
       border-radius: 50%;
       margin-right: 4rem;
+
+      @include small-tablet {
+        width: 8rem * 2;
+        height: 8rem * 2;
+        margin-right: 2.4rem * 2;
+      }
 
       img {
         width: 100%;
@@ -32,6 +50,10 @@
 
     &-text {
       max-width: 58.3rem;
+
+      @include small-tablet {
+        max-width: 23.9rem * 2;
+      }
     }
 
     &-icon {
@@ -44,6 +66,14 @@
         height: 100%;
         -o-object-fit: contain;
         object-fit: contain;
+      }
+
+      @include small-tablet {
+        position: absolute;
+        width: 2.4rem * 2;
+        height: 2.4rem * 2;
+        right: 0;
+        bottom: 4rem;
       }
     }
   }
