@@ -1,4 +1,14 @@
 .publications {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+    padding-bottom: 10rem;
+
+    @include small-tablet {
+      gap: 4rem;
+    }
+  }
   &__item {
     display: flex;
     align-items: center;
