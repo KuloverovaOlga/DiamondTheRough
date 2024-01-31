@@ -1,7 +1,9 @@
 .footer {
   padding: 14.5rem 0 6rem;
   // .footer__inner
-
+  @include small-tablet {
+    padding: 12rem 0 5rem;
+  }
   &__inner {
     display: flex;
     flex-direction: column;
