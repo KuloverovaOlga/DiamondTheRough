@@ -1,6 +1,7 @@
 export const modules = {};
-import popup from '../utils/popup';
-import form from '../utils/form';
+// import popup from '../utils/popup';
+// import form from '../utils/form';
+import 'inputmask';
 
 window.$ = window.jQuery = require('jquery');
 import { _slideDown, _slideUp } from '../utils/constants';
@@ -11,6 +12,9 @@ document.addEventListener('DOMContentLoaded', () => {
   } catch {}
   try {
     portfolioTabs();
+  } catch {}
+  try {
+    phoneMask();
   } catch {}
 });
 
@@ -84,3 +88,9 @@ function portfolioTabs() {
     });
   });
 }
+
+function phoneMask ()  {
+    const mask = new Inputmask('+7 (999) 999 99 99');
+    mask.mask($('.phone-mask'));
+}
+
