@@ -6,7 +6,8 @@
   &__container {
     width: 162.5rem;
     @include small-tablet {
-      width: 100%;
+      width: 78.6rem;
+      padding: 0;
     }
   }
 
@@ -52,12 +53,12 @@
 
     @include small-tablet {
       justify-content: flex-start;
-      animation: scrollText 20s infinite linear;
+      animation: scrollText1 20s infinite linear;
       gap: 10rem;
     }
   }
 
-  @keyframes scrollText {
+  @keyframes scrollText1 {
     from {
       transform: translateX(0%);
     }
@@ -93,6 +94,7 @@
   // .portfolio-hero__info-box
 
   &__info-box {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,6 +106,7 @@
     @include small-tablet {
       position: static;
       transform: translateY(0);
+      padding: 0 4rem;
     }
   }
 
