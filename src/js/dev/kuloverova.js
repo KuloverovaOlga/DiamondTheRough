@@ -4,6 +4,8 @@ import 'inputmask';
 window.$ = window.jQuery = require('jquery');
 
 
+export const modules = {};
+
 
 document.addEventListener('DOMContentLoaded', () => {
   try {
