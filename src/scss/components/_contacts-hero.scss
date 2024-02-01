@@ -57,12 +57,12 @@
 
     @include small-tablet {
       justify-content: flex-start;
-      animation: scrollText 20s infinite linear;
+      animation: scrollText2 20s infinite linear;
       gap: 10rem;
       padding: 24rem 0 0;
     }
   }
-  @keyframes scrollText {
+  @keyframes scrollText2 {
     from {
       transform: translateX(0%);
     }
