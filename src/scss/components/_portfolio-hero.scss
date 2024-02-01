@@ -53,12 +53,12 @@
 
     @include small-tablet {
       justify-content: flex-start;
-      animation: scrollText 20s infinite linear;
+      animation: scrollText1 20s infinite linear;
       gap: 10rem;
     }
   }
 
-  @keyframes scrollText {
+  @keyframes scrollText1 {
     from {
       transform: translateX(0%);
     }
