@@ -11,6 +11,7 @@
 
     @include small-tablet {
       gap: 4rem;
+      padding: 0;
     }
   }
 
@@ -25,6 +26,7 @@
     @include small-tablet {
       max-width: 100%;
       gap: 6rem;
+      padding: 0 4rem;
     }
   }
 
@@ -77,7 +79,7 @@
       transform: translateX(0%);
     }
     to {
-      transform: translateX(-217.2rem);
+      transform: translateX(-229rem);
     }
   }
 
@@ -86,7 +88,7 @@
       transform: translateX(0%);
     }
     to {
-      transform: translateX(-217.2rem);
+      transform: translateX(-229rem);
     }
   }
 
@@ -104,7 +106,7 @@
       object-fit: cover;
     }
     @include small-tablet {
-      width: 207.2rem;
+      width: 219rem;
       height: 28rem;
       flex-shrink: 0;
       padding-left: 5rem;
