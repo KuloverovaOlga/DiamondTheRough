@@ -1,11 +1,10 @@
-export const modules = {};
 // import popup from '../utils/popup';
 // import form from '../utils/form';
 import 'inputmask';
-
 window.$ = window.jQuery = require('jquery');
 
 
+export const modules = {};
 
 document.addEventListener('DOMContentLoaded', () => {
   try {
@@ -17,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   try {
     phoneMask();
   } catch {}
+
 });
 
 function dropdown() {
