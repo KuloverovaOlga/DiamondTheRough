@@ -1,0 +1,93 @@
+.text-backgrnd {
+    margin-bottom: 14.5rem;
+
+    &__container {
+        position: relative;
+        width: 144.2rem;
+
+        & > div {
+            &:first-of-type {
+                font-family: 'Jura';
+                font-size: 11rem;
+                font-weight: 600;
+                line-height: 13rem;
+                text-transform: uppercase;
+                
+                .desktop {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    span {
+                        &:nth-child(2) {
+                            flex: 0 0 100%;
+                            text-align: right;
+                        }
+                    }
+                }
+
+                .mobile {
+                    display: none;
+                }
+            }
+
+            &:nth-of-type(2) {
+                position: absolute;
+                width: 78.3rem;
+                height: 10.4rem;
+                top: 2.5rem;
+                right: 0;
+            }
+
+            &:last-of-type {
+                position: absolute;
+                width: 27.4rem;
+                height: 10.4rem;
+                left: 0;
+                top: 15rem;
+            }
+        }
+    }
+
+    @media (max-width: 48em) {
+        margin-bottom: 13.3rem;
+
+        &__container {
+            & > div {
+                &:first-of-type {
+                    .mobile {
+                        display: flex;
+                        flex-wrap: wrap;
+                        font-size: 6.4rem;
+                        font-weight: 600;
+                        line-height: 9rem;
+    
+                        span {
+                            &:nth-child(2) {
+                                flex: 0 0 100%;
+                                text-align: right;
+                            }
+                        }
+                    }
+    
+                    .desktop {
+                        display: none;
+                    }
+                }
+    
+                &:nth-of-type(2) {
+                    width: 70.8rem;
+                    height: 8.4rem;
+                    top: -10.2rem;
+                    right: 4rem;
+                }
+    
+                &:last-of-type {
+                    width: 20.8rem;
+                    height: 7.26rem;
+                    left: 4rem;
+                    top: 19rem;
+                }
+            }
+        }
+    }
+}
