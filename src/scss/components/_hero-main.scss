@@ -63,11 +63,12 @@
   &__item {
     padding-top: 2.4rem;
     border-top: 0.4rem solid $grey;
+    max-width: 41.2rem;
     @include small-tablet {
       padding-top: 0;
       border-top: none;
       width: 100%;
-
+      max-width: 20.5rem;
     }
   }
 
@@ -75,7 +76,7 @@
 
   &__item-link {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     @include small-tablet {
         width: 100%;
@@ -89,7 +90,7 @@
 
   &__item-info-text-box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.2rem;
     @include small-tablet {
         width: 100%;
@@ -110,6 +111,13 @@
   // .hero-main__item-info-title
 
   &__item-info-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 25rem;
+    @include small-tablet {
+        max-width: 20.5rem;
+    }
   }
 
   // .hero-main__item-info-num
