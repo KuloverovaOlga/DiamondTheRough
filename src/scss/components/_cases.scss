@@ -139,9 +139,9 @@
 		width: 5.8rem;
 		height: 5.8rem;
 		cursor: pointer;
-		position: absolute;
-		bottom: 0;
-		right: -10rem;
+		position: fixed;
+		bottom: 5vh;
+		right: 10rem;
 		transition: background-color 0.3s;
 
 		display: flex;

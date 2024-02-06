@@ -161,6 +161,7 @@
     font-size: 3rem;
   }
   &__logo-bottom-text {
+    color: $grey;
     transition: opacity 0.3s;
     &.active {
       opacity: 0;
