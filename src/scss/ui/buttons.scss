@@ -7,12 +7,20 @@
   color: $white;
   transition: background-color 0.3s;
 
+  &:hover {
+    .button-svg-box  {
+      transform: translateX(0.5rem);
+    }
+  }
+
   & .button-text {
     font-family: "EuclidCircularA";
   }
   & .button-svg-box {
     width: 2.4rem;
     height: 2.4rem;
+    transition: 0.2s ease-in-out;
+
     & svg {
       width: 100%;
       height: 100%;
