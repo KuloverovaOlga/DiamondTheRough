@@ -1,8 +1,8 @@
 .contacts-hero {
-    padding: 0.6rem 0 5rem;
-    @include small-tablet {
-        padding: 3.2rem 0 16rem;
-      }
+  padding: 0.6rem 0 5rem;
+  @include small-tablet {
+    padding: 3.2rem 0 16rem;
+  }
   // .contacts-hero__container
 
   &__container {
@@ -118,8 +118,8 @@
     border-top: 0.4rem solid $black;
     width: 39rem;
     @include small-tablet {
-       width: 66rem;
-      }
+      width: 66rem;
+    }
   }
 
   // .contacts-hero__item-text-box
@@ -151,5 +151,18 @@
 
   &__item-num {
     color: $grey;
+  }
+
+  @media (max-width: 48em) {
+    &__inner {
+      flex-direction: column-reverse;
+      row-gap: 0;
+
+      &::after {
+        background-size: 80rem;
+        top: 19rem;
+        left: -8rem;
+      }
+    }
   }
 }
