@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="./assets/images/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./assets/images/favicon.ico" rel="icon" />
     <title>Портфолио</title>
   </head>
   <body>
     <div class="wrapper">
       <include src="./components/_header.html"></include>
       <main>
-        <section class="service-head">
+        <section class="service-head wow animate__fadeInUp">
           <div class="service-head__container container">
             <div class="service-head__top">
               <div class="service-head__info">
@@ -25,7 +27,7 @@
                 </ul>
               </div>
               <div class="service-head__info-img">
-                <img src="./assets/images/service-head-img.webp" alt="" />
+                <img src="./assets/images/service-head-img-7.webp" alt="" />
               </div>
               <div class="service-head__info">
                 <div class="service-head__info-head">
@@ -78,74 +80,8 @@
             </div>
           </div>
         </section>
-        <section class="adventages">
-          <div class="adventages__container container">
-            <div class="adventages__left">
-              <div class="adventages__title">Преимущества работы с нами</div>
-              <div class="adventages__options">
-                <div class="adventages__options-title">Варианты разработки:</div>
-                <ul class="adventages__options-list descktop">
-                  <li class="adventages__options-item">Tilda</li>
-                  <li class="adventages__options-item">1c Битрикс</li>
-                  <li class="adventages__options-item">Word Press</li>
-                  <div class="adventages__options-list_background">
-                    <img src="./assets/images/adventages-list-background.webp" alt="" />
-                  </div>
-                </ul>
-              </div>
-            </div>
-            <div class="adventages__right">
-              <div class="adventages__column">
-                <div class="adventages__column-head">
-                  <div class="adventages__column-title">Сделаем все для вашего комфорта.</div>
-                  <div class="adventages__column-number">#1</div>
-                </div>
-                <p class="adventages__column-text">
-                  Думаем о вашем времени. Разработаем сайт любой сложности, с учетом ваших пожеланий. И
-                  никаких шаблонов
-                </p>
-                <p class="adventages__column-text">
-                  Ценим ваше время. Пока вы развиваете бизнес, создадим сайт, который легко обновлять и
-                  поддерживать.
-                </p>
-                <p class="adventages__column-text">
-                  Настроим под ключ. Передадим вам полностью настроенный и оптимизированный ресурс, поможем
-                  дальнейшим управлением.
-                </p>
-              </div>
-              <div class="adventages__options mobile">
-                <div class="adventages__options-title">Варианты разработки:</div>
-                <ul class="adventages__options-list">
-                  <li class="adventages__options-item">Android</li>
-                  <li class="adventages__options-item">iOS</li>
-                  <li class="adventages__options-item">Web-приложения</li>
-                  <div class="adventages__options-list_background">
-                    <img src="./assets/images/adventages-list-background.webp" alt="" />
-                  </div>
-                </ul>
-              </div>
-              <div class="adventages__column">
-                <div class="adventages__column-head">
-                  <div class="adventages__column-title">Работа полного цикла, закроем все задачи сами.</div>
-                  <div class="adventages__column-number">#2</div>
-                </div>
-                <p class="adventages__column-text">
-                  Сбор данных. <br />
-                  Изучаем направление компании, делаем анализ конкурентов и целевой аудитории
-                </p>
-                <p class="adventages__column-text">
-                  Дизайн и проектирование Создаем адаптивный дизайн и контент с учетом требований поисковых
-                  систем
-                </p>
-                <p class="adventages__column-text">
-                  Настройка сайта. <br />
-                  Подключаем веб-аналитику, SEO, SMM, контекстную рекламу и все необходимые инструменты
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="our-cases">
+        <include src="./components/_adventages.html"></include>
+        <section class="our-cases wow animate__fadeInUp">
           <div class="our-cases__container container">
             <div class="our-cases__head">
               <div class="our-cases__head-text">Более 30 успешно выполненных проектов</div>
@@ -343,27 +279,8 @@
             </ul>
           </div>
         </section>
-        <section class="text-backgrnd">
-          <div class="text-backgrnd__container container">
-            <div>
-              <div class="desktop">
-                <span>Разработка</span> <span>детализированного</span>
-                <span>семантического ядра с учетом всех словоформ</span>
-              </div>
-              <div class="mobile">
-                <span>решаем проблемы целевой аудитории</span> <span>оптимизируем</span>
-                <span>бизнес процессы</span>
-              </div>
-            </div>
-            <div>
-              <img src="./assets/images/text-backgrnd-img-1.webp" alt="" />
-            </div>
-            <div>
-              <img src="./assets/images/text-backgrnd-img-2.webp" alt="" />
-            </div>
-          </div>
-        </section>
-        <section class="our-services service">
+        <include src="./components/_text-backgrnd.html"></include>
+        <section class="our-services service wow animate__fadeInUp">
           <div class="container">
             <div class="our-services__inner">
               <ul class="our-services__list">
@@ -608,113 +525,7 @@
             </div>
           </div>
         </section>
-        <section class="seo">
-          <div class="container">
-            <div class="seo__inner">
-              <p class="seo__title tl1">Заголовок SEO текста, возможно длинный</p>
-              <div class="seo__content-wrapper">
-                <div class="seo__content">
-                  <p class="seo__text txt18">
-                    Есть только один шанс произвести хорошее впечатление на пользователя. Мы принимаем решение
-                    нравится нам сайт или нет всего за 10 секунд. Поэтому удобство и качество ресурса напрямую
-                    влияют на количество онлайн-продаж. Важно поддерживать внимание аудитории, поэтому мы
-                    тщательно продумываем структуру сайта, дизайн и контент. В результате сайт способен
-                    значительно увеличить поток клиентов.
-                  </p>
-                  <p class="seo__text txt18">
-                    Предоставляем полный цикл услуг по созданию сайтов: проектирование, разработка мобильного
-                    и адаптивного дизайна, интеграция с 1С, Битрикс, внедрение различных внешних систем.
-                  </p>
-                  <div class="seo__list-wrapper">
-                    <p class="seo__list-title txt18">Что входит в комплексный подход:</p>
-                    <ul class="seo__list">
-                      <li class="seo__item txt18">
-                        Проект, который решит поставленные бизнес-задачи с учетом особенностей ниши и
-                        пользовательского опыта.
-                      </li>
-                      <li class="seo__item txt18">
-                        Адаптивный дизайн. Мы создаем по-настоящему уникальные дизайны на мировом уровне, а не
-                        на уровне других сайтов в топе выдачи.
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="seo__info-box">
-                  <div class="seo__info-img-box">
-                    <img src="./assets/images/seo.webp" alt="" />
-                  </div>
-                  <div class="seo__info-btn-box">
-                    <div class="seo__logo-wrapper">
-                      <div class="seo__logo-box txt18_nav txt18_nav--bold">
-                        <span class="seo__logo-text logo-text">Diamond the Rough</span>
-                      </div>
-                      <p class="seo__logo-bottom-text txt18">Эстетика в каждом пиксиле</p>
-                    </div>
-                    <button class="seo__btn button">
-                      <span class="seo__btn-text button-text txt18">Портфолио</span>
-
-                      <div class="seo__btn-svg-box button-svg-box">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="25"
-                          height="25"
-                          viewBox="0 0 25 25"
-                          fill="none"
-                        >
-                          <path
-                            d="M15.4007 19.0403L21.4707 12.9703L15.4007 6.90027"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M4.47078 12.9702L21.3008 12.9702"
-                            stroke="white"
-                            stroke-width="1.5"
-                            stroke-miterlimit="10"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-                <div class="seo__content">
-                  <p class="seo__text txt18">
-                    Расширенные возможности: стабильная работа при большом количестве информации, возможность
-                    подключения дополнительных сервисов и передачи данных между разными системами.
-                  </p>
-
-                  <div class="seo__list-wrapper">
-                    <ul class="seo__list">
-                      <li class="seo__item txt18">
-                        Продвижение сайта: увеличение конверсии, грамотная оптимизация под поисковые системы
-                        Яндекс и Google, генерация лидов.
-                      </li>
-                      <li class="seo__item txt18">Функционал любой сложности</li>
-                      <li class="seo__item txt18">
-                        Все наши сайты адаптивные, со встроенным алгоритмом распознающим устройство и
-                        подстраивающим под него необходимый дизайн в точно рассчитанной конфигурации
-                      </li>
-                    </ul>
-                  </div>
-                  <p class="seo__text txt18">
-                    Сегодня сайт в немалой степени определяет статус компании, наличие собственного
-                    многофункционального сайта стало необходимостью для всех.
-                  </p>
-                  <p class="seo__text txt18">
-                    Мы подберем правильные решения для вас и пользователей.
-                    <br />
-                    Реализуйте вместе с нами самые смелые и сложные идеи!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <include src="./components/_seo.html"></include>
       </main>
       <include src="./components/_footer.html"></include>
     </div>

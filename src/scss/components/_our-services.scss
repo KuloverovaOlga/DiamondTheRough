@@ -1,5 +1,9 @@
 .our-services {
   &.service {
+    .container {
+      width: 153rem;
+    }
+
     .our-services__item-img-box {
       width: 18.6rem;
 
@@ -19,7 +23,7 @@
 
       .our-services__item-img-box {
         width: 25rem;
-  
+
         img {
           object-fit: contain;
         }
@@ -31,11 +35,16 @@
   @include small-tablet {
     padding: 13.3rem 0;
   }
+
+  .container {
+    width: 123.7rem;
+  }
+
   // .our-services__inner
 
   &__inner {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 10rem;
     @include small-tablet {
       flex-direction: column-reverse;
@@ -47,7 +56,7 @@
 
   &__list {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 8.4rem;
 
     @include small-tablet {
@@ -119,7 +128,6 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 2.5rem;
-    border-top: 0.4rem solid $grey;
     @include small-tablet {
       flex-direction: column;
       border-top: none;
@@ -149,5 +157,11 @@
   // .our-services__btn-svg-box
 
   &__btn-svg-box {
+  }
+
+  @media (max-width: 48em) {
+    .container {
+      width: 100%;
+    }
   }
 }
