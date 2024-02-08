@@ -163,6 +163,10 @@
   &__logo-bottom-text {
     color: $grey;
     transition: opacity 0.3s;
+    font-size: 2.11rem;
+    font-weight: 600;
+    line-height: 2.7rem;
+    letter-spacing: 0em;
     &.active {
       opacity: 0;
     }
