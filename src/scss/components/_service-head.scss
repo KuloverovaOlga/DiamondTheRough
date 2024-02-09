@@ -98,8 +98,12 @@
     font-size: 5rem;
     font-weight: 600;
     line-height: 5.9rem;
-    max-width: 60rem;
+    max-width: 70rem;
     text-align: center;
+
+    &.small-width {
+      max-width: 62rem;
+    }
   }
 
   @media (max-width: 48em) {
@@ -120,6 +124,10 @@
       flex-direction: column;
       margin-bottom: 74.12rem;
       row-gap: 5.4rem;
+    }
+
+    &__title {
+      max-width: 59rem;
     }
 
     &__info {
